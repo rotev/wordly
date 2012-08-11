@@ -3,7 +3,7 @@ class Post < ActiveRecord::Base
   include ActionView::Helpers::SanitizeHelper
 
   attr_protected :author_id
-  acts_as_taggable_on :tags
+  #acts_as_taggable_on :tags
   after_create :set_uid
   before_save :set_slug
 
